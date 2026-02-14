@@ -1,0 +1,51 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --color-bg-primary: #F8F9FC; /*фон*/
+    --color-bg-card: #E8ECF2; /*карточки хз*/
+    --color-surface: #FFFFFF;
+    --color-accent: #D4A5A5; /*акцент*/
+    --color-text-primary: #1E1E1E; /*для текста*/
+    --font-display: 'Prata', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 100 900;  /* диапазон жирности, поддерживаемый переменным шрифтом */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url('../assets/fonts/Prata-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
