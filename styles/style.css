@@ -6,9 +6,8 @@
 
 
 :root{
-    --color-bg-primary: #F8F9FC; /*фон*/
-    --color-bg-card: #E8ECF2; /*карточки хз*/
-    --color-surface: #FFFFFF;
+    --color-bg-card: #F8F9FC; /*карточки*/
+    --color-bg-primary: #E8ECF2; /*фон*/
     --color-accent: #D4A5A5; /*акцент*/
     --color-text-primary: #1E1E1E; /*для текста*/
     --font-display: 'Prata', serif;
@@ -41,7 +40,6 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
 
@@ -49,3 +47,43 @@ h1, h2, h3, h4, .display {
   font-family: var(--font-display);
   font-weight: 400;
 }
+
+#card{
+  background-color: var(--color-bg-card);
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+.scroll-top { 
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    width: 56px; 
+    height: 56px; 
+    background: #1E1E1E; 
+    color: white; 
+    border: none; 
+    border-radius: 50%; 
+    font-size: 24px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: all 0.3s ease; 
+    z-index: 999; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+.scroll-top.visible { 
+    opacity: 1; 
+    visibility: visible; 
+} 
+.scroll-top:hover { 
+    transform: scale(1.1); 
+} 
+.scroll-top:active { 
+    transform: scale(0.95); 
+} 
