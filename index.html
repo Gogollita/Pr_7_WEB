@@ -20,10 +20,10 @@
             <div>
                 <ul class="md:flex hidden items-center gap-4 lg:gap-10">
                     <li><a class="hover:text-gray-500/80 transition" href="#main">Главная</a></li>
-                    <li><a class="hover:text-gray-500/80 transition" href="#services">Услуги</a></li>
+                    <li><a class="hover:text-gray-500/80 transition" href="404.html">Услуги</a></li>
                     <li><a class="hover:text-gray-500/80 transition" href="#about">О нас</a></li>
-                    <li><a class="hover:text-gray-500/80 transition" href="#portfolio">Портфолио</a></li>
-                    <li><a class="hover:text-gray-500/80 transition" href="#contacts">Контакты</a></li>
+                    <li><a class="hover:text-gray-500/80 transition" href="reviews.html">Отзывы</a></li>
+                    <li><a class="hover:text-gray-500/80 transition" href="#faq">FAQ</a></li>
                 </ul>
             </div>
 
@@ -46,17 +46,17 @@
                 class="mobile-menu absolute top-[70px] left-0 w-full bg-[#E8ECF2] p-6 hidden md:hidden shadow-lg rounded-b-2xl">
                 <ul class="flex flex-col space-y-4 text-lg gap-2 h-full">
                     <li><a href="#main" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Главная</a></li>
-                    <li><a href="#services" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Услуги</a></li>
+                    <li><a href="404.html" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Услуги</a></li>
                     <li><a href="#about" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;О нас</a></li>
-                    <li><a href="#portfolio" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Портфолио</a></li>
-                    <li><a href="#contacts" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Контакты</a></li>
+                    <li><a href="reviews.html" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;Отзывы</a></li>
+                    <li><a href="#faq" class="text-sm">&nbsp;&nbsp;&nbsp;&nbsp;FAQ</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="main" class="lg:min-h-screen">
+        <section id="main" class="min-h-screen">
             <div
                 class="flex flex-col md:flex-row max-md:flex-col-reverse items-center place-content-around mt-10 md:mt-20 px-4 md:px-16 lg:px-24 xl:px-32">
                 <div class="flex flex-col items-center md:items-start gap-4">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <img src="assets/img/MainNails.png" alt="hero"
-                    class="sm:max-w-xs max-md:max-w-xs lg:max-w-lg 2xl:max-w-xl transition-all duration-300">
+                    class="sm:max-w-xs max-md:max-w-125 max-md:max-h-100 lg:max-w-lg 2xl:max-w-xl transition-all duration-300">
             </div>
         </section>
         <div class="max-lg:h-16 flex flex-col items-center justify-center gap-3">
@@ -90,7 +90,7 @@
             <div class="w-1/2 h-[3px] rounded-full bg-[#1E1E1E]/70"></div>
         </div>
 
-        <section id="services" class="flex items-center justify-center flex-col md:h-full bg-white xl:min-h-screen">
+        <section id="services" class="flex items-center justify-center flex-col md:h-full bg-white min-h-screen">
 
             <h1 class="font-medium text-[52px] max-md:text-3xl h-30 max-md:h-20 text-slate-800 text-center">Услуги</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
@@ -313,11 +313,11 @@
             <div class="w-5/6 h-[3px] rounded-full bg-[#1E1E1E]/40"></div>
             <div class="w-1/2 h-[3px] rounded-full bg-[#1E1E1E]/70"></div>
         </div>
-        <section id="about" class="flex lg:min-h-screen flex-col md:flex-row items-center justify-center gap-10">
+        <section id="about" class="flex min-h-screen flex-col md:flex-row items-center justify-center gap-10">
 
             <div class="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
-                <img class="max-w-md w-full h-120 max-lg:size-96 object-cover rounded-2xl" src="assets/img/Nails2.jpg"
-                    alt="Art of Nails">
+                <img class="max-sm:size-64 max-w-md w-full h-120 max-lg:size-96 object-cover rounded-2xl"
+                    src="assets/img/Nails2.jpg" alt="Art of Nails">
             </div>
             <div class="flex flex-col text-sm text-slate-600 max-w-lg items-center gap-4">
                 <h1 class="font-medium text-4xl md:text-[52px] text-slate-800 text-start">О нас</h1>
@@ -346,7 +346,7 @@
             <div class="w-5/6 h-[3px] rounded-full bg-[#1E1E1E]/40"></div>
             <div class="w-1/2 h-[3px] rounded-full bg-[#1E1E1E]/70"></div>
         </div>
-        <section id="portfolio" class="lg:min-h-screen">
+        <section id="portfolio" class="min-h-screen">
             <div class="flex flex-col items-center gap-4 justify-center">
                 <h1 class="text-3xl font-semibold text-center">Портфолио</h1>
                 <p class="text-sm text-slate-500 text-center mt-2 max-w-lg">Коллекция наших работ. Создаём
@@ -528,7 +528,20 @@
             <div class="w-5/6 h-[3px] rounded-full bg-[#1E1E1E]/40"></div>
             <div class="w-1/2 h-[3px] rounded-full bg-[#1E1E1E]/70"></div>
         </div>
-        <section id="contacts" class="flex items-center justify-center h-full lg:min-h-screen">
+
+        <section id="faq" class="flex items-center justify-center h-full min-h-screen">
+            <div class="flex flex-col items-center text-center">
+                <p class="text-base font-medium text-slate-600">FAQ</p>
+                <h1 class="text-3xl md:text-4xl h-18 font-semibold mt-2">Часто задаваемые вопросы</h1>
+
+                <div id="faqContainer" class="max-w-xl w-full flex flex-col gap-4 items-center text-left"></div>
+            </div>
+        </section>
+        <div class="h-16 max-lg:h-32 flex flex-col items-center justify-center gap-3">
+            <div class="w-5/6 h-[3px] rounded-full bg-[#1E1E1E]/40"></div>
+            <div class="w-1/2 h-[3px] rounded-full bg-[#1E1E1E]/70"></div>
+        </div>
+        <section id="contacts" class="flex items-center justify-center h-full min-h-screen">
             <div class="flex flex-col max-lg:gap-10 md:max-w-xs lg:max-w-lg w-5/6 items-center">
                 <h1 class="text-3xl font-semibold text-gray-900 text-center max-md:text-start h-12 tracking-tight">
                     Записаться на приём
@@ -600,7 +613,7 @@
     <div class="max-lg:h-16"></div>
     <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full">
         <div
-            class="flex flex-col md:flex-row h-48 items-center justify-evenly w-full gap-10 max-md:gap-0 py-10 border-b border-gray-500/30">
+            class="flex flex-col md:flex-row h-70 items-center justify-evenly w-full gap-10 max-md:gap-0 py-10 border-b border-gray-500/30">
 
             <div class="max-w-96">
                 <img src="assets/icons/LOGO.png" alt="Logo of company" class="w-[82px] h-[60px]">
