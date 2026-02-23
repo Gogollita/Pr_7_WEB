@@ -1,10 +1,3 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
 :root{
     --color-bg-card: #F8F9FC; /*карточки*/
     --color-bg-primary: #E8ECF2; /*фон*/
@@ -87,3 +80,5 @@ p{
 .scroll-top:active { 
     transform: scale(0.95); 
 } 
+
+
